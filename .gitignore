@@ -1,0 +1,18 @@
+    # Ignore all files named 'log.txt'
+    log.txt
+
+    # Ignore all files with the '.tmp' extension
+    *.tmp
+
+    # Ignore the 'node_modules' directory and its contents
+    node_modules/
+
+    # Ignore the 'build' directory and its contents
+    build/
+
+    # Ignore a specific file within a directory
+    config/local_settings.py
+
+    # Negate a previously ignored pattern (don't ignore 'important.log' in the 'logs' directory)
+    logs/*
+    !logs/important.log
