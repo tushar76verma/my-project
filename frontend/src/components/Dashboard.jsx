@@ -33,7 +33,7 @@ export default function Dashboard({ token }) {
       })
       .then((res) => setChart(res.data))
       .catch(() => setError("Error fetching chart"));
-
+ 
     axios
       .get("http://127.0.0.1:8000/api/table/", {
         headers: { Authorization: `Bearer ${token}` },
